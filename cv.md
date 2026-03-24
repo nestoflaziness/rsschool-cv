@@ -4,23 +4,26 @@
 ___
 ## PERSONAL INFORMATION
 **Name:** Elena Zimakova
-**Phone number:** +7-960-564-7423
-**Email:** [ahes@mail.ru](https://mail.ru/)
-**GitHub:** [nestoflazy](https://github.com/nestoflazy )
-[LinkedIn](https://www.linkedin.com/in/elena-zimakova-b477651b7/ )
+**Phone number:** +7-960-564-XXXX
+**Email:** [ahes@mail.ru](https://ahes@mail.ru/)
+**GitHub:** [nestoflaziness](https://github.com/nestoflaziness )
 
 ___
-## OBJECTIVE
-Looking for an entry-level position as a Frontend Developer in a dynamic firm that will be values my analytical and technical skills and provides scope for updating my knowledge. I seek a company that will help me contribute to its development while concurrently aiding my personal growth.
+## ABOUT ME
+Hello!
+
+I'm a beginner Frontend Developer. I have experience as a tester engeneer at a large product company (EPAM) and as a Markup Developer/HTML Developer at a web integrator (WESMA). I ​​guarantee clean code and attention to detail.
+
+Looking for an entry-level position as a Frontend Developer in a company that will help me contribute to its development while concurrently aiding my personal growth.
 
 ___
 ## HARD SKILLS
 * HTML5, XML
 * CSS3, SASS/SCSS
-* Bootstrap 5 (Basic)
-* JavaScript ES6 (Basic)
+* Basic: Bootstrap 5
+* Basic: JavaScript ES6
 * Git, GitHub
-* Webpack, Gulp, Vite (Basic)
+* Basic: Webpack, Gulp, Vite
 * Figma, Adobe Photoshop
 
 
@@ -43,7 +46,7 @@ function isPrime(num) {
 ```
 ___
 ## WORK EXPERIENCE
-Digital content developer with practical knowledge in HTML/CSS/JS and XML
+HTML Developer and A11y tester with practical knowledge in HTML/CSS/JS and XML
 * Experience in CSS for desktop and mobile devices
 * Experience in adaptive and responsive design
 * Experience in a11y development and testing
