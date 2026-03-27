@@ -30,7 +30,7 @@
             </div>
             <section id="skills">
               <h2>Hard Skills</h2>
-              <ul class="content-list">
+              <ul class="content-list marker-list">
                 <li>HTML5, XML</li>
                 <li>CSS3, SASS/SCSS</li>
                 <li>Bootstrap 5 (Basic)</li>
@@ -57,23 +57,65 @@
             <section id="education">
               <h2>Education</h2>
               <div class="content-list">
-                <h3 class="highlight-text">
-                  Bryansk State Technical University
-                </h3>
-                <ul>
-                  <li>Information Technology</li>
+                <ul class="container">
+                  <li>
+                    <span class="highlight-text"
+                      >Bryansk State Technical University</span
+                    >
+                    <ul class="marker-list">
+                      <li>Information Technology (IT) faculty</li>
+                    </ul>
+                  </li>
                 </ul>
-                <h3 class="highlight-text">
-                  Udemy
-                </h3>
-                <ul>
-                  <li>The Complete JavaScript + React Course</li>
+                <ul class="container">
+                  <li>
+                    <span class="highlight-text">Udemy</span>
+                    <ul class="marker-list">
+                      <li>
+                        <a
+                          href="https://www.udemy.com/course/webdeveloper/"
+                          target="_blank"
+                          >WEB developer</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.udemy.com/course/javascript_full/"
+                          target="_blank"
+                          >The Complete JavaScript + React Course</a
+                        >
+                        (in progress)
+                      </li>
+
+                      <li>
+                        <a
+                          href="https://www.udemy.com/course/javascript_practice/"
+                          target="_blank"
+                          >JavaScript practice</a
+                        >
+                        (in progress)
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="container">
+                  <li>
+                    <span class="highlight-text">RS School</span>
+                    <ul class="marker-list">
+                      <li><a
+                          href="https://rs.school/courses/javascript-preschool-ru"
+                          target="_blank"
+                          >JS/Front-end Pre-school Course</a
+                        >
+                        (in progress)
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
             </section>
-
             <section id="example">
-              <h2>Code example:</h2>
+              <h2>Code example</h2>
               <div class="content-list">
                 <h3 class="highlight-text">
                   "Is a number prime?" KATA from CODEWARS:
@@ -83,20 +125,21 @@
                   logical value true or false depending on if the integer is a
                   prime.
                 </p>
-                <div class="example-block">
+                <details class="example-block">
+                  <summary>Example here:</summary>
                   <pre class="scrollbar-wrapper"><code>
-function isPrime(num) {
-  if (num  &lt; 2) return false;
-    const limit = Math.sqrt(num);
-      for (let i = 2; i  &lt;= limit; ++i) {
-        if (num % i === 0) {
-        return false;
-        }
-      }                
-  return true;
-}</code>        
-</pre>
-                </div>
+  <span class="SteelBlue">function</span> <span class="Khaki">isPrime(<span class="LightSkyBlue">num</span>)</span><span class="Gold">{</span>
+    <span class="MediumPurple">if (<span class="LightSkyBlue">num</span> <span class="White">&lt;</span> <span class="MediumAquamarine">2</span>) return</span> <span class="SteelBlue">false</span>;
+    <span class="SteelBlue">const</span> <span class="DeepSkyBlue">limit</span> = <span class="LightSkyBlue">Math</span><span class="Khaki">.sqrt</span><span class="MediumPurple">(<span class="LightSkyBlue">num</span>)</span>;
+    <span class="MediumPurple">for (<span class="SteelBlue">let</span> <span class="LightSkyBlue">i</span> <span class="White">=</span> <span class="MediumAquamarine">2</span><span class="White">;</span> <span class="LightSkyBlue">i</span> <span class="White">&lt;=</span> <span class="DeepSkyBlue">limit</span><span class="White">;</span> <span class="White">++</span><span class="LightSkyBlue">i</span>){</span>
+      <span class="MediumPurple">if</span> <span class="DodgerBlue">(<span class="LightSkyBlue">num</span> <span class="White">%</span> <span class="LightSkyBlue">i</span> <span class="White">===</span> <span class="MediumAquamarine">0</span>){</span>
+        <span class="MediumPurple">return</span> <span class="SteelBlue">false</span>;
+      <span class="DodgerBlue">}</span>
+    <span class="MediumPurple">}
+    return</span> <span class="SteelBlue">true</span>;
+  <span class="Gold">}</span></code>        
+  </pre>
+                </details>
               </div>
             </section>
           </div>
@@ -136,7 +179,7 @@ function isPrime(num) {
                   target="_blank"
                   >Freelancing</a
                 >
-                <ul class="content-list">
+                <ul class="content-list marker-list">
                   <li>
                     Development and integration of adaptive interfaces using
                     BEM, HTML5, CSS3, JavaScript into Webasyst and 1C-Bitrix
@@ -164,7 +207,7 @@ function isPrime(num) {
                   Software Testing Engineer
                 </h3>
                 <a href="https://www.epam.com" target="_blank">EPAM Systems</a>
-                <ul class="content-list">
+                <ul class="content-list marker-list">
                   <li>
                     Manual testing desktop and mobile versions of educational
                     system web applications;
@@ -196,7 +239,7 @@ function isPrime(num) {
                 <li>
                   CV#1. Markdown & Git
                   <a
-                    href=" https://nestoflazy.github.io/rsschool-cv/cv"
+                    href=" https://nestoflaziness.github.io/rsschool-cv/cv"
                     target="_blank"
                     >rsschool-cv</a
                   >
