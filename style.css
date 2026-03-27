@@ -346,9 +346,9 @@ footer p {
     grid-area: right;
   }
 
-  .grid-item-left .image {
+  /* .grid-item-left .image {
     display: none;
-  }
+  } */
 
   header {
     padding: 1% 3%;
@@ -393,6 +393,18 @@ footer p {
 
   #contacts .content-list {
     justify-content: center;
+  }
+
+  .image {
+    height: 200px;
+    max-width: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 5px solid #2daae4;
+  }
+
+    .image img {
+    border-radius: 50%;
   }
 }
 

@@ -102,7 +102,8 @@
                   <li>
                     <span class="highlight-text">RS School</span>
                     <ul class="marker-list">
-                      <li><a
+                      <li>
+                        <a
                           href="https://rs.school/courses/javascript-preschool-ru"
                           target="_blank"
                           >JS/Front-end Pre-school Course</a
@@ -283,5 +284,31 @@
         </div>
       </footer>
     </div>
+    <script>
+      const mobileQuery = window.matchMedia("(max-width: 768px)");
+      let desktopContainer  = document.querySelector("#skills");
+      let mobileContainer = document.querySelector("#about .title");
+      let element = document.querySelector(".grid-item-left .image");
+
+      function handleTabletChange(e) {
+        if (e.matches) {
+          mobileContainer.before(element);
+        } else {
+          desktopContainer.before(element);
+        }
+      }
+      mobileQuery.addListener(handleTabletChange);
+      handleTabletChange(mobileQuery);
+
+      function isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent,
+        );
+      }
+
+      if (isMobileDevice()) {
+        handleTabletChange(mobileQuery);
+      }
+    </script>
   </body>
 </html>
