@@ -71,21 +71,24 @@ ul {
   font-size: 16px;
   line-height: 28px;
 }
-
-ul.marker-list li {
-  margin-left: 20px;
+ul.marker-list {
+  list-style-image: url("img/bullet-check.svg");
 }
 
-ul.marker-list li::marker {
+ul.marker-list li {
+  margin-left: 30px;
+}
+
+ul.marker-list li {
+  padding-left: 5px;
+}
+
+/* ul.marker-list li::marker {
   content: url(img/bullet-check.svg);
   display: inline-block;
   width: 20px;
   height: 20px;
-}
-
-ul.marker-list li {
-  padding-left: 10px;
-}
+} */
 
 p {
   padding-top: 10px;
@@ -346,10 +349,6 @@ footer p {
     grid-area: right;
   }
 
-  /* .grid-item-left .image {
-    display: none;
-  } */
-
   header {
     padding: 1% 3%;
   }
@@ -403,7 +402,7 @@ footer p {
     border: 5px solid #2daae4;
   }
 
-    .image img {
+  .image img {
     border-radius: 50%;
   }
 }
@@ -422,5 +421,9 @@ footer p {
   }
   h3 {
     font-size: 16px;
+  }
+  .image {
+    height: 150px;
+    max-width: 150px;
   }
 }
