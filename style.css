@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,500&display=swap");
 
 :root {
-  --main-color: #1C9DD9;
+  --main-color: #1c9dd9;
+  --main-color-text: #2FABE4;
   --white-color: #fff;
   --black-color: #000;
 }
@@ -26,14 +27,14 @@ body {
 
 a,
 summary {
-  color: #167CAC;
+  color: var(--main-color-text);
   text-decoration: none;
   font-weight: 700;
 }
 
 a:hover,
 summary:hover {
-  color: #0782BB;
+  color: #278ed3;
 }
 
 img {
@@ -148,6 +149,14 @@ p {
 }
 .grid-item-right .content-list {
   padding: 10px 0;
+}
+
+.grid-item-right a {
+  color: #167cac;
+}
+
+.grid-item-right a:hover {
+  color: #1B5983;
 }
 
 /* header */
@@ -304,8 +313,8 @@ pre {
   gap: 3%;
 }
 
-#contacts a:hover img{
- transform: scale(1.1);
+#contacts a:hover img {
+  transform: scale(1.1);
 }
 
 footer .grid-item-right {
