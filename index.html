@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Elena Zimakova</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="burger-menu">
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#example">Example</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </header>
+      <main>
+        <div class="grid-container">
+          <!-- left content -->
+          <div class="grid-item-left">
+            <div class="image">
+              <img src="img/bg-photo.jpg" alt="photo of person">
+            </div>
+            <section id="skills">
+              <h2>Hard Skills</h2>
+              <ul class="content-list marker-list">
+                <li>HTML5, XML</li>
+                <li>CSS3, SASS/SCSS</li>
+                <li>Bootstrap 5 (Basic)</li>
+                <li>JavaScript ES6 (Basic)</li>
+                <li>Git, GitHub</li>
+                <li>Webpack (Basic), Vite (Basic)</li>
+                <li>Figma, Adobe Photoshop</li>
+              </ul>
+            </section>
+            <section id="lang">
+              <h2>Languages</h2>
+              <ul class="content-list">
+                <li>
+                  <span class="highlight-text">English-Speaking:</span>
+                  Pre-Intermediate (A2+)
+                </li>
+                <li>
+                  <span class="highlight-text">English-Writing:</span>
+                  Intermediate (B1)
+                </li>
+                <li><span>Russian:</span> Native</li>
+              </ul>
+            </section>
+            <section id="education">
+              <h2>Education</h2>
+              <div class="content-list">
+                <ul class="container">
+                  <li>
+                    <span class="highlight-text"
+                      >Bryansk State Technical University</span
+                    >
+                    <ul class="marker-list">
+                      <li>Information Technology (IT) faculty</li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="container">
+                  <li>
+                    <span class="highlight-text">Udemy</span>
+                    <ul class="marker-list">
+                      <li>
+                        <a
+                          href="https://www.udemy.com/course/webdeveloper/"
+                          target="_blank"
+                          >WEB developer</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.udemy.com/course/javascript_full/"
+                          target="_blank"
+                          >The Complete JavaScript + React Course</a
+                        >
+                        (in progress)
+                      </li>
+
+                      <li>
+                        <a
+                          href="https://www.udemy.com/course/javascript_practice/"
+                          target="_blank"
+                          >JavaScript practice</a
+                        >
+                        (in progress)
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="container">
+                  <li>
+                    <span class="highlight-text">RS School</span>
+                    <ul class="marker-list">
+                      <li>
+                        <a
+                          href="https://rs.school/courses/javascript-preschool-ru"
+                          target="_blank"
+                          >JS/Front-end Pre-school Course</a
+                        >
+                        (in progress)
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section id="example">
+              <h2>Code example</h2>
+              <div class="content-list">
+                <h3 class="highlight-text">
+                  "Is a number prime?" KATA from CODEWARS:
+                </h3>
+                <p>
+                  Define a function that takes an integer argument and returns a
+                  logical value true or false depending on if the integer is a
+                  prime.
+                </p>
+                <details class="example-block">
+                  <summary>Example here:</summary>
+                  <pre class="scrollbar-wrapper"><code>
+  <span class="SteelBlue">function</span> <span class="Khaki">isPrime(<span class="LightSkyBlue">num</span>)</span><span class="Gold">{</span>
+    <span class="MediumPurple">if (<span class="LightSkyBlue">num</span> <span class="White">&lt;</span> <span class="MediumAquamarine">2</span>) return</span> <span class="SteelBlue">false</span>;
+    <span class="SteelBlue">const</span> <span class="DeepSkyBlue">limit</span> = <span class="LightSkyBlue">Math</span><span class="Khaki">.sqrt</span><span class="MediumPurple">(<span class="LightSkyBlue">num</span>)</span>;
+    <span class="MediumPurple">for (<span class="SteelBlue">let</span> <span class="LightSkyBlue">i</span> <span class="White">=</span> <span class="MediumAquamarine">2</span><span class="White">;</span> <span class="LightSkyBlue">i</span> <span class="White">&lt;=</span> <span class="DeepSkyBlue">limit</span><span class="White">;</span> <span class="White">++</span><span class="LightSkyBlue">i</span>){</span>
+      <span class="MediumPurple">if</span> <span class="DodgerBlue">(<span class="LightSkyBlue">num</span> <span class="White">%</span> <span class="LightSkyBlue">i</span> <span class="White">===</span> <span class="MediumAquamarine">0</span>){</span>
+        <span class="MediumPurple">return</span> <span class="SteelBlue">false</span>;
+      <span class="DodgerBlue">}</span>
+    <span class="MediumPurple">}
+    return</span> <span class="SteelBlue">true</span>;
+  <span class="Gold">}</span></code>        
+  </pre>
+                </details>
+              </div>
+            </section>
+          </div>
+          <!-- right content -->
+          <div class="grid-item-right">
+            <section id="about">
+              <div class="title">
+                <h1>Elena <span>Zimakova</span></h1>
+                <div class="subtitle">Junior Frontend Developer</div>
+              </div>
+              <div class="info">
+                <h2>About me</h2>
+                <p>Hello!</p>
+                <p>
+                  I'm a beginner Frontend Developer. I have experience as a
+                  tester engeneer at a large product company (EPAM) and as a
+                  Markup Developer/HTML Developer at a web integrator (WESMA).
+                  I'm currently improving my programming skills and also want to
+                  learn React.
+                </p>
+                <p>
+                  Looking for an entry-level position as a Frontend Developer in
+                  a company that will help me contribute to its development
+                  while concurrently aiding my personal growth.
+                </p>
+              </div>
+            </section>
+            <section id="experience">
+              <h2>Work Experience</h2>
+              <div class="container">
+                <h3>
+                  <span class="grey-text">From 2023 to present</span>
+                  Markup Developer/HTML Developer
+                </h3>
+                <a
+                  href="https://career.habr.com/companies/freelance"
+                  target="_blank"
+                  >Freelancing</a
+                >
+                <ul class="content-list marker-list">
+                  <li>
+                    Development and integration of adaptive interfaces using
+                    BEM, HTML5, CSS3, JavaScript into Webasyst and 1C-Bitrix
+                    systems;
+                  </li>
+                  <li>
+                    Redesign of pages, fixing layout and functionality bugs in
+                    Webasyst and 1C-Bitrix systems;
+                  </li>
+                  <li>
+                    Landing page layout from scratch using Figma layouts,
+                    without the use of libraries or frameworks, only HTML, CSS,
+                    and JavaScript;
+                  </li>
+                  <li>
+                    Working with libraries Swiper.js, Owl Carousel, jQuery
+                    (basic skills) and the Bootstrap framework (basic skills);
+                  </li>
+                  <li>Working with Git, building projects on Vite/Webpack;</li>
+                </ul>
+              </div>
+              <div class="container">
+                <h3>
+                  <span class="grey-text">From 2018 to 2022</span>
+                  Software Testing Engineer
+                </h3>
+                <a href="https://www.epam.com" target="_blank">EPAM Systems</a>
+                <ul class="content-list marker-list">
+                  <li>
+                    Manual testing desktop and mobile versions of educational
+                    system web applications;
+                  </li>
+                  <li>
+                    Manual accessibility testing (a11y) of web applications and
+                    websites, adhering to WCAG 2.1 standards using knowledge in
+                    HTML5, CSS3, and XML (Working with DevTools);
+                  </li>
+                  <li>
+                    Interface testing using screen readers (NVDA, JAWS,
+                    VoiceOver, and TalkBack);
+                  </li>
+                  <li>
+                    Accessibility recomendation: semantic headings, forms,
+                    alternative texts, contrast, and ARIA;
+                  </li>
+                  <li>
+                    Working in the Jira bug tracking system, and OpenServer;
+                  </li>
+
+                  <li>Maintaining documentation in English;</li>
+                </ul>
+              </div>
+            </section>
+            <section id="projects">
+              <h2>My currently projects</h2>
+              <ul class="content-list">
+                <li>
+                  CV#1. Markdown & Git
+                  <a
+                    href=" https://nestoflaziness.github.io/rsschool-cv/cv"
+                    target="_blank"
+                    >rsschool-cv</a
+                  >
+                </li>
+                <li>Coming soon</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="grid-container">
+        <section id="contacts" class="grid-item-left">
+          <h2>Contacts</h2>
+          <ul class="content-list">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/elena-zimakova-b477651b7/"
+                target="_blank"
+                ><img src="img/linkedin-icon.svg" alt="linkedin icon"></a>
+            </li>
+            <li>
+              <a href="" target="_blank"
+                ><img src="img/discord.svg" alt="discord icon"></a>
+            </li>
+            <li>
+              <a href="https://github.com/nestoflaziness" target="_blank"
+                ><img src="img/github-icon.svg" alt="github icon"></a>
+            </li>
+            <li>
+              <a href="https://rs.school/courses/javascript" target="_blank" class="rss-icon"
+                ><img src="img/rss.svg" alt="rsschool icon"></a>
+            </li>
+          </ul>
+        </section>
+        <div class="grid-item-right">
+          <p>RS School 2026</p>
+        </div>
+      </footer>
+      <!-- scroll to top -->
+      <div class="scroll-to-top">      
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="#2daae4" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>          
+    </div>
+    </div>
+    <script>
+      const mobileQuery = window.matchMedia("(max-width: 768px)");
+      let desktopContainer = document.querySelector("#skills");
+      let mobileContainer = document.querySelector("#about .title");
+      let element = document.querySelector(".grid-item-left .image");
+
+      function handleTabletChange(e) {
+        if (e.matches) {
+          mobileContainer.before(element);
+        } else {
+          desktopContainer.before(element);
+        }
+      }
+      mobileQuery.addListener(handleTabletChange);
+      handleTabletChange(mobileQuery);
+
+      function isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent,
+        );
+      }
+
+      if (isMobileDevice()) {
+        handleTabletChange(mobileQuery);
+      }
+
+      // burger menu
+
+      const burgerNode = document.querySelector(".burger");
+      const burgerMenuNode = document.querySelector(".burger-menu");
+      const burgerMenuLi = burgerMenuNode?.querySelectorAll("li");
+
+      let isExpanded = false;
+
+      const toggleMenuVisibility = () => {
+        isExpanded
+          ? burgerMenuNode?.classList.remove("expanded")
+          : burgerMenuNode?.classList.add("expanded");
+
+        isExpanded
+          ? burgerNode?.classList.remove("expanded")
+          : burgerNode?.classList.add("expanded");
+
+        isExpanded
+          ? document.body.classList.remove("expanded")
+          : document.body.classList.add("expanded");
+
+        isExpanded = !isExpanded;
+      };
+
+      burgerMenuLi?.forEach((li) => {
+        li?.addEventListener("click", toggleMenuVisibility);
+      });
+
+      burgerNode?.addEventListener("click", toggleMenuVisibility);
+
+      // Scroll to Top
+
+      let scrollTopBtn = document.querySelector(".scroll-to-top");
+
+      addEventListener("scroll", () => {
+        if (window.scrollY >= 300) {
+          scrollTopBtn?.classList.add("scroll");
+        } else {
+          scrollTopBtn?.classList.remove("scroll");
+        }
+      });
+
+      scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo(0, 0);
+      });
+    </script>
+  </body>
+</html>
