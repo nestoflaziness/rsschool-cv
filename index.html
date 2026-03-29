@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Elena Zimakova</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <nav>
+        <nav class="burger-menu">
           <ul class="nav-list">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -20,13 +20,18 @@
             <li><a href="#contacts">Contacts</a></li>
           </ul>
         </nav>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
       </header>
       <main>
         <div class="grid-container">
           <!-- left content -->
           <div class="grid-item-left">
             <div class="image">
-              <img src="img/bg-photo.jpg" alt="photo of person">
+              <img src="img/bg-photo.jpg" alt="photo of person" />
             </div>
             <section id="skills">
               <h2>Hard Skills</h2>
@@ -259,19 +264,22 @@
               <a
                 href="https://www.linkedin.com/in/elena-zimakova-b477651b7/"
                 target="_blank"
-                ><img src="img/linkedin-icon.svg" alt="linkedin icon"></a>
+                ><img src="img/linkedin-icon.svg" alt="linkedin icon"
+              /></a>
             </li>
             <li>
               <a href="" target="_blank"
-                ><img src="img/discord.svg" alt="discord icon"></a>
+                ><img src="img/discord.svg" alt="discord icon"
+              /></a>
             </li>
             <li>
               <a href="https://github.com/nestoflaziness" target="_blank"
-                ><img src="img/github-icon.svg" alt="github icon"></a>
+                ><img src="img/github-icon.svg" alt="github icon"
+              /></a>
             </li>
             <li>
-              <a href="https://rs.school/courses/javascript" target="_blank"
-                ><img src="img/rss.svg" alt="rs school icon"></a>
+              <a href="https://rs.school/courses/javascript" target="_blank" class="rss-icon"
+                ></a>
             </li>
           </ul>
         </section>
@@ -279,10 +287,16 @@
           <p>RS School 2026</p>
         </div>
       </footer>
+      <!-- scroll to top -->
+      <div class="scroll-to-top">      
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="#2daae4" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>          
+    </div>
     </div>
     <script>
       const mobileQuery = window.matchMedia("(max-width: 768px)");
-      let desktopContainer  = document.querySelector("#skills");
+      let desktopContainer = document.querySelector("#skills");
       let mobileContainer = document.querySelector("#about .title");
       let element = document.querySelector(".grid-item-left .image");
 
@@ -305,6 +319,52 @@
       if (isMobileDevice()) {
         handleTabletChange(mobileQuery);
       }
+
+      // burger menu
+
+      const burgerNode = document.querySelector(".burger");
+      const burgerMenuNode = document.querySelector(".burger-menu");
+      const burgerMenuLi = burgerMenuNode?.querySelectorAll("li");
+
+      let isExpanded = false;
+
+      const toggleMenuVisibility = () => {
+        isExpanded
+          ? burgerMenuNode?.classList.remove("expanded")
+          : burgerMenuNode?.classList.add("expanded");
+
+        isExpanded
+          ? burgerNode?.classList.remove("expanded")
+          : burgerNode?.classList.add("expanded");
+
+        isExpanded
+          ? document.body.classList.remove("expanded")
+          : document.body.classList.add("expanded");
+
+        isExpanded = !isExpanded;
+      };
+
+      burgerMenuLi?.forEach((li) => {
+        li?.addEventListener("click", toggleMenuVisibility);
+      });
+
+      burgerNode?.addEventListener("click", toggleMenuVisibility);
+
+      // Scroll to Top
+
+      let scrollTopBtn = document.querySelector(".scroll-to-top");
+
+      addEventListener("scroll", () => {
+        if (window.scrollY >= 300) {
+          scrollTopBtn?.classList.add("scroll");
+        } else {
+          scrollTopBtn?.classList.remove("scroll");
+        }
+      });
+
+      scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo(0, 0);
+      });
     </script>
   </body>
 </html>

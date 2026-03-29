@@ -83,13 +83,6 @@ ul.marker-list li {
   padding-left: 5px;
 }
 
-/* ul.marker-list li::marker {
-  content: url(img/bullet-check.svg);
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-} */
-
 p {
   padding-top: 10px;
 }
@@ -169,6 +162,10 @@ header {
   font-size: 14px;
 }
 
+.burger {
+  display: none;
+}
+
 /* about section */
 
 #about .container {
@@ -213,7 +210,7 @@ header {
 }
 
 .grey-text {
-  opacity: 0.5;
+  color: rgba(0, 0, 0, 0.5);
   font-size: 0.7em;
 }
 
@@ -300,8 +297,21 @@ pre {
   justify-content: space-between;
   gap: 3%;
 }
-#contacts a {
+
+/* #contacts a {
   display: flex;
+} */
+
+/* #contacts a:hover {
+ transform: scale(2);
+} */
+
+#contacts a.rss-icon::after {
+  content: url(img/rss.svg);
+}
+
+#contacts a.rss-icon:hover {
+  content: url(img/rss-hover.svg);
 }
 
 footer .grid-item-right {
@@ -312,6 +322,10 @@ footer .grid-item-right {
 
 footer p {
   padding: 10px;
+}
+
+.scroll-to-top {
+  display: none;
 }
 
 /* ---------- MQ ---------- */
@@ -350,7 +364,7 @@ footer p {
   }
 
   header {
-    padding: 1% 3%;
+    padding: 10px 3%;
   }
 
   .nav-list {
@@ -404,6 +418,88 @@ footer p {
 
   .image img {
     border-radius: 50%;
+  }
+
+  /* burger */
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  .line {
+    width: 30px;
+    height: 2px;
+    background-color: #2daae4;
+  }
+
+  .burger.expanded .line:first-child {
+    transform: translateY(7px) rotate(225deg);
+  }
+
+  .burger.expanded .line:last-child {
+    transform: translateY(0px) rotate(-225deg);
+  }
+
+  .burger.expanded .line:nth-child(2) {
+    display: none;
+  }
+
+  .burger.expanded {
+    margin: 20px;
+  }
+
+  .burger-menu {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    box-sizing: border-box;
+    transform: translateX(100%);
+    height: 100%;
+  }
+
+  .burger-menu.expanded {
+    transform: translateX(0%);
+  }
+
+  .expanded .nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+  }
+
+  .expanded .nav-list a {
+    font-size: 28px;
+  }
+  body.expanded {
+    overflow: hidden;
+  }
+
+  .scroll-to-top.scroll {
+    position: fixed;
+    bottom: 10%;
+    right: 4.5%;
+    padding: 12px;
+    box-shadow: 1px 1px 3px 2px #000;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .scroll-to-top svg {
+    transform: rotate(90deg);
   }
 }
 
