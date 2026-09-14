@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -91,7 +91,6 @@
                         >
                         (in progress)
                       </li>
-
                       <li>
                         <a
                           href="https://www.udemy.com/course/javascript_practice/"
@@ -143,7 +142,7 @@
       <span class="DodgerBlue">}</span>
     <span class="MediumPurple">}
     return</span> <span class="SteelBlue">true</span>;
-  <span class="Gold">}</span></code>        
+  <span class="Gold">}</span></code>
   </pre>
                 </details>
               </div>
@@ -161,10 +160,10 @@
                 <p>Hello!</p>
                 <p>
                   I'm a beginner Frontend Developer. I have experience as a
-                  tester engeneer at a large product company (EPAM) and as a
-                  Markup Developer/HTML Developer at a web integrator (WESMA).
-                  I'm currently improving my programming skills and also want to
-                  learn React.
+                  tester engeneer at a global IT services and digital product
+                  engineering company (EPAM) and as a Markup Developer/HTML
+                  Developer at a web integrator (WESMA). I'm currently improving
+                  my programming skills and also learning React.
                 </p>
                 <p>
                   Looking for an entry-level position as a Frontend Developer in
@@ -234,7 +233,6 @@
                   <li>
                     Working in the Jira bug tracking system, and OpenServer;
                   </li>
-
                   <li>Maintaining documentation in English;</li>
                 </ul>
               </div>
@@ -243,7 +241,7 @@
               <h2>My currently projects</h2>
               <ul class="content-list">
                 <li>
-                  CV#1. Markdown & Git
+                  CV#1. Markdown&amp;Git
                   <a
                     href=" https://nestoflaziness.github.io/rsschool-cv/cv"
                     target="_blank"
@@ -264,19 +262,26 @@
               <a
                 href="https://www.linkedin.com/in/elena-zimakova-b477651b7/"
                 target="_blank"
-                ><img src="img/linkedin-icon.svg" alt="linkedin icon"></a>
+                ><img src="img/linkedin-icon.svg" alt="linkedin icon"
+              ></a>
             </li>
             <li>
               <a href="" target="_blank"
-                ><img src="img/discord.svg" alt="discord icon"></a>
+                ><img src="img/discord.svg" alt="discord icon"
+              ></a>
             </li>
             <li>
               <a href="https://github.com/nestoflaziness" target="_blank"
-                ><img src="img/github-icon.svg" alt="github icon"></a>
+                ><img src="img/github-icon.svg" alt="github icon"
+              ></a>
             </li>
             <li>
-              <a href="https://rs.school/courses/javascript" target="_blank" class="rss-icon"
-                ><img src="img/rss.svg" alt="rsschool icon"></a>
+              <a
+                href="https://rs.school/courses/javascript"
+                target="_blank"
+                class="rss-icon"
+                ><img src="img/rss.svg" alt="rsschool icon"
+              ></a>
             </li>
           </ul>
         </section>
@@ -285,18 +290,28 @@
         </div>
       </footer>
       <!-- scroll to top -->
-      <div class="scroll-to-top">      
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="#2daae4" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>          
-    </div>
+      <div class="scroll-to-top">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.5 12H6M6 12L12 6M6 12L12 18"
+            stroke="#2daae4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+      </div>
     </div>
     <script>
       const mobileQuery = window.matchMedia("(max-width: 768px)");
       let desktopContainer = document.querySelector("#skills");
       let mobileContainer = document.querySelector("#about .title");
       let element = document.querySelector(".grid-item-left .image");
-
       function handleTabletChange(e) {
         if (e.matches) {
           mobileContainer.before(element);
@@ -306,51 +321,37 @@
       }
       mobileQuery.addListener(handleTabletChange);
       handleTabletChange(mobileQuery);
-
       function isMobileDevice() {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
           navigator.userAgent,
         );
       }
-
       if (isMobileDevice()) {
         handleTabletChange(mobileQuery);
       }
-
       // burger menu
-
       const burgerNode = document.querySelector(".burger");
       const burgerMenuNode = document.querySelector(".burger-menu");
       const burgerMenuLi = burgerMenuNode?.querySelectorAll("li");
-
       let isExpanded = false;
-
       const toggleMenuVisibility = () => {
         isExpanded
           ? burgerMenuNode?.classList.remove("expanded")
           : burgerMenuNode?.classList.add("expanded");
-
         isExpanded
           ? burgerNode?.classList.remove("expanded")
           : burgerNode?.classList.add("expanded");
-
         isExpanded
           ? document.body.classList.remove("expanded")
           : document.body.classList.add("expanded");
-
         isExpanded = !isExpanded;
       };
-
       burgerMenuLi?.forEach((li) => {
         li?.addEventListener("click", toggleMenuVisibility);
       });
-
       burgerNode?.addEventListener("click", toggleMenuVisibility);
-
       // Scroll to Top
-
       let scrollTopBtn = document.querySelector(".scroll-to-top");
-
       addEventListener("scroll", () => {
         if (window.scrollY >= 300) {
           scrollTopBtn?.classList.add("scroll");
@@ -358,7 +359,6 @@
           scrollTopBtn?.classList.remove("scroll");
         }
       });
-
       scrollTopBtn.addEventListener("click", () => {
         window.scrollTo(0, 0);
       });
